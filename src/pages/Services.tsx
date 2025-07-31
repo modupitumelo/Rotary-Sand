@@ -110,7 +110,7 @@ const Services = () => {
                 </div>
                 <div className={index % 2 === 1 ? 'lg:col-start-1' : ''}>
                   <img 
-                    src="/image.jpg"
+                    src="/service1.jpg"
                     alt={service.title}
                     className="rounded-lg shadow-xl w-full h-96 object-cover"
                   />
