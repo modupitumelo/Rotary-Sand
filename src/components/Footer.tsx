@@ -34,7 +34,7 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <Link to="/" className="flex items-center space-x-3 mb-6 group">
               <div className="relative">
-                <img src="/logo.png" alt="Rotary Sand Logo" className="h-12 w-auto object-contain group-hover:opacity-80 transition-opacity duration-200" />
+                <img src="/logo2.png" alt="Rotary Sand Logo" className="h-12 w-auto object-contain group-hover:opacity-80 transition-opacity duration-200" />
               </div>
               
             </Link>
