@@ -172,7 +172,7 @@ const About = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
               <div className="order-2 lg:order-1 relative">
                 <img 
-                  src="/image.jpg" 
+                  src="/quality.jpg" 
                   alt="Quality testing laboratory" 
                   className="rounded-lg shadow-xl w-full h-80 lg:h-96 object-cover"
                 />
@@ -222,7 +222,7 @@ const About = () => {
               </div>
               <div className="relative">
                 <img 
-                  src="/image.jpg" 
+                  src="/environment.jpg" 
                   alt="Environmental conservation" 
                   className="rounded-lg shadow-xl w-full h-80 lg:h-96 object-cover"
                 />
@@ -234,7 +234,7 @@ const About = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
               <div className="order-2 lg:order-1 relative">
                 <img 
-                  src="/image.jpg" 
+                  src="/human.jpg" 
                   alt="Team collaboration" 
                   className="rounded-lg shadow-xl w-full h-80 lg:h-96 object-cover"
                 />
