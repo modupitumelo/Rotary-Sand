@@ -222,7 +222,7 @@ const About = () => {
               </div>
               <div className="relative">
                 <img 
-                  src="/environment.jpg" 
+                  src="/enviroment.jpg" 
                   alt="Environmental conservation" 
                   className="rounded-lg shadow-xl w-full h-80 lg:h-96 object-cover"
                 />
