@@ -115,21 +115,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Services Grid */}
-        <div className="mt-12 pt-8 border-t border-gray-800">
-          <h3 className="text-lg font-bold mb-6 text-white text-center">Our Services</h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {services.map((service, index) => (
-              <div 
-                key={index} 
-                onClick={() => handleServiceClick(service.path, service.section)}
-                className="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 transition-colors duration-200 border border-gray-700 cursor-pointer"
-              >
-                <span className="text-sm text-gray-300">{service.name}</span>
-              </div>
-            ))}
-          </div>
-        </div>
+    
 
         {/* Bottom Section */}
         <div className="mt-12 pt-8 border-t border-gray-800">
