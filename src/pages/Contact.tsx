@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Phone, Mail, MapPin, Clock, Send } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Send, Building, Truck } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -188,11 +188,39 @@ const Contact = () => {
             <p className="text-xl text-gray-700">Located near Delmas for optimal access to high-quality silica deposits</p>
           </div>
           <div className="bg-white p-8 rounded-lg shadow-lg">
-            <div className="aspect-video bg-gray-200 rounded-lg flex items-center justify-center">
-              <div className="text-center">
-                <MapPin className="h-12 w-12 text-gray-400 mx-auto mb-4" />
-                <p className="text-gray-600">Interactive map would be embedded here</p>
-                <p className="text-sm text-gray-500 mt-2">Bronkhorstspruit, Gauteng, South Africa</p>
+            <div className="aspect-video rounded-lg overflow-hidden">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115313.23456789!2d28.7!3d-25.9!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e956c4c4c4c4c4c%3A0x4c4c4c4c4c4c4c4c!2sBronkhorstspruit%2C%20South%20Africa!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Rotary Sand Location - Bronkhorstspruit, South Africa"
+              ></iframe>
+            </div>
+            <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+              <div className="flex items-center justify-center space-x-3">
+                <MapPin className="h-5 w-5 text-gray-600" />
+                <div>
+                  <p className="font-semibold text-gray-900">Location</p>
+                  <p className="text-sm text-gray-600">Bronkhorstspruit, Gauteng</p>
+                </div>
+              </div>
+              <div className="flex items-center justify-center space-x-3">
+                <Building className="h-5 w-5 text-gray-600" />
+                <div>
+                  <p className="font-semibold text-gray-900">Mining Operations</p>
+                  <p className="text-sm text-gray-600">Near Delmas</p>
+                </div>
+              </div>
+              <div className="flex items-center justify-center space-x-3">
+                <Truck className="h-5 w-5 text-gray-600" />
+                <div>
+                  <p className="font-semibold text-gray-900">Service Area</p>
+                  <p className="text-sm text-gray-600">Nationwide Delivery</p>
+                </div>
               </div>
             </div>
           </div>

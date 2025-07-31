@@ -4,18 +4,27 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const quickLinks = [
-    { name: 'Our Products', path: '/products' },
-    { name: 'Services', path: '/services' },
-    { name: 'B-BBEE', path: '/bee' },
-    { name: 'Gallery', path: '/gallery' },
+    { name: 'Our Products', path: '/products', scrollToTop: true },
+    { name: 'Services', path: '/services', scrollToTop: true },
+    { name: 'B-BBEE', path: '/bee', scrollToTop: true },
+    { name: 'Gallery', path: '/gallery', scrollToTop: true },
   ];
 
   const services = [
-    'Filter Sands & Grits',
-    'Industrial Sands',
-    'Building Materials',
-    'Sports & Leisure Sands'
+    { name: 'Filter Sands & Grits', path: '/services', section: 'filter-sands' },
+    { name: 'Industrial Sands', path: '/services', section: 'industrial-sands' },
+    { name: 'Building Materials', path: '/services', section: 'building-materials' },
+    { name: 'Sports & Leisure Sands', path: '/services', section: 'sports-leisure' }
   ];
+
+  const handleQuickLinkClick = (path: string) => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleServiceClick = (path: string, section: string) => {
+    // Navigate to services page and scroll to section
+    window.location.href = `${path}#${section}`;
+  };
 
   return (
     <footer className="bg-black text-white">
@@ -110,8 +119,12 @@ const Footer = () => {
           <h3 className="text-lg font-bold mb-6 text-white text-center">Our Services</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {services.map((service, index) => (
-              <div key={index} className="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 transition-colors duration-200 border border-gray-700">
-                <span className="text-sm text-gray-300">{service}</span>
+              <div 
+                key={index} 
+                onClick={() => handleServiceClick(service.path, service.section)}
+                className="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 transition-colors duration-200 border border-gray-700 cursor-pointer"
+              >
+                <span className="text-sm text-gray-300">{service.name}</span>
               </div>
             ))}
           </div>

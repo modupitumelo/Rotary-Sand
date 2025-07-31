@@ -6,6 +6,7 @@ const Services = () => {
     {
       icon: <TestTube className="h-12 w-12" />,
       title: "Product Development & Lab Testing",
+      id: "filter-sands",
       description: "Comprehensive testing and certification services",
       features: [
         "In-house laboratory testing",
@@ -18,6 +19,7 @@ const Services = () => {
     {
       icon: <Truck className="h-12 w-12" />,
       title: "Logistics & Delivery",
+      id: "industrial-sands",
       description: "Nationwide delivery solutions",
       features: [
         "Fleet of specialized tankers",
@@ -30,6 +32,7 @@ const Services = () => {
     {
       icon: <Building className="h-12 w-12" />,
       title: "Infrastructure Support",
+      id: "building-materials",
       description: "Complete mining and processing facilities",
       features: [
         "Mining infrastructure",
@@ -40,6 +43,19 @@ const Services = () => {
       ]
     }
   ];
+
+  React.useEffect(() => {
+    // Handle scrolling to section from URL hash
+    const hash = window.location.hash.substring(1);
+    if (hash) {
+      setTimeout(() => {
+        const element = document.getElementById(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 100);
+    }
+  }, []);
 
   return (
     <div className="pt-16">
@@ -71,7 +87,10 @@ const Services = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-20">
             {services.map((service, index) => (
-              <div key={index} className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${
+              <div 
+                key={index} 
+                id={service.id}
+                className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center scroll-mt-24 ${
                 index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''
               }`}>
                 <div className={index % 2 === 1 ? 'lg:col-start-2' : ''}>
@@ -141,7 +160,7 @@ const Services = () => {
       </section>
 
       {/* Process Overview */}
-      <section className="py-20 bg-white">
+      <section id="sports-leisure" className="py-20 bg-white scroll-mt-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-black mb-4">Our Process</h2>
