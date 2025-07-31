@@ -8,6 +8,7 @@ const Services = () => {
       title: "Product Development & Lab Testing",
       id: "filter-sands",
       description: "Comprehensive testing and certification services",
+      image: "/service1.jpg",
       features: [
         "In-house laboratory testing",
         "Partner lab collaboration for complex analysis",
@@ -21,6 +22,7 @@ const Services = () => {
       title: "Logistics & Delivery",
       id: "industrial-sands",
       description: "Nationwide delivery solutions",
+      image: "/service2.jpg",
       features: [
         "Fleet of specialized tankers",
         "Dry product delivery",
@@ -34,6 +36,7 @@ const Services = () => {
       title: "Infrastructure Support",
       id: "building-materials",
       description: "Complete mining and processing facilities",
+      image: "/service3.jpg",
       features: [
         "Mining infrastructure",
         "Drying facilities",
@@ -45,7 +48,6 @@ const Services = () => {
   ];
 
   React.useEffect(() => {
-    // Handle scrolling to section from URL hash
     const hash = window.location.hash.substring(1);
     if (hash) {
       setTimeout(() => {
@@ -91,8 +93,9 @@ const Services = () => {
                 key={index} 
                 id={service.id}
                 className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center scroll-mt-24 ${
-                index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''
-              }`}>
+                  index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''
+                }`}
+              >
                 <div className={index % 2 === 1 ? 'lg:col-start-2' : ''}>
                   <div className="text-black mb-6">
                     {service.icon}
@@ -110,7 +113,7 @@ const Services = () => {
                 </div>
                 <div className={index % 2 === 1 ? 'lg:col-start-1' : ''}>
                   <img 
-                    src="/service1.jpg"
+                    src={service.image}
                     alt={service.title}
                     className="rounded-lg shadow-xl w-full h-96 object-cover"
                   />
