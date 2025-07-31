@@ -66,6 +66,7 @@ const Footer = () => {
                 <Link
                   key={index}
                   to={link.path}
+                 onClick={() => handleQuickLinkClick(link.path)}
                   className="block text-gray-300 hover:text-white transition-colors duration-200 group flex items-center"
                 >
                   <ArrowRight className="h-4 w-4 mr-2 opacity-0 group-hover:opacity-100 transform -translate-x-2 group-hover:translate-x-0 transition-all duration-200" />
