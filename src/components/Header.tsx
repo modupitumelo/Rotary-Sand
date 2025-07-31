@@ -86,7 +86,7 @@ const Header = () => {
         <div className={`lg:hidden transition-all duration-300 overflow-hidden absolute top-full left-0 right-0 bg-white shadow-lg ${
           isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
         }`}>
-          <div className="py-4 space-y-1 border-t border-gray-200">
+          <div className="py-4 space-y-1 border-t border-gray-200 max-h-80 overflow-y-auto">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
@@ -101,11 +101,11 @@ const Header = () => {
                 {link.name}
               </Link>
             ))}
-            <div className="pt-2 border-t border-gray-200 mt-2">
+            <div className="pt-2 border-t border-gray-200 mt-2 px-6 pb-2">
               <Link
                 to="/contact"
                 onClick={handleNavClick}
-                className="block mx-6 px-4 py-3 bg-black text-white text-center font-semibold text-sm rounded-md hover:bg-gray-800 transition-colors duration-200"
+                className="block px-4 py-3 bg-black text-white text-center font-semibold text-sm rounded-md hover:bg-gray-800 transition-colors duration-200"
               >
                 Get Quote
               </Link>
