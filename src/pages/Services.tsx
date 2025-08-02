@@ -30,20 +30,6 @@ const Services = () => {
         "Nationwide coverage",
         "Flexible scheduling"
       ]
-    },
-    {
-      icon: <Building className="h-12 w-12" />,
-      title: "Infrastructure Support",
-      id: "building-materials",
-      description: "Complete mining and processing facilities",
-      image: "/service3.jpg",
-      features: [
-        "Mining infrastructure",
-        "Drying facilities",
-        "Weighbridge operations",
-        "Storage capabilities",
-        "Processing equipment"
-      ]
     }
   ];
 
@@ -133,7 +119,7 @@ const Services = () => {
               State-of-the-art facilities ensuring quality and efficiency
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
             <div className="bg-white p-8 rounded-lg shadow-lg text-center">
               <Building className="h-12 w-12 text-black mx-auto mb-4" />
               <h3 className="text-xl font-semibold text-black mb-4">Mining Infrastructure</h3>
@@ -158,6 +144,22 @@ const Services = () => {
                 and transparent transactions for all our clients.
               </p>
             </div>
+            <div className="bg-white p-8 rounded-lg shadow-lg text-center">
+              <Building className="h-12 w-12 text-black mx-auto mb-4" />
+              <h3 className="text-xl font-semibold text-black mb-4">Storage Capabilities</h3>
+              <p className="text-gray-600">
+                Large-scale storage facilities ensuring consistent supply 
+                and inventory management for all product varieties.
+              </p>
+            </div>
+            <div className="bg-white p-8 rounded-lg shadow-lg text-center">
+              <FlaskConical className="h-12 w-12 text-black mx-auto mb-4" />
+              <h3 className="text-xl font-semibold text-black mb-4">Processing Equipment</h3>
+              <p className="text-gray-600">
+                State-of-the-art processing machinery for grading, 
+                sizing, and preparing materials to exact specifications.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -171,7 +173,7 @@ const Services = () => {
               From extraction to delivery, every step is optimized for quality
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
             <div className="text-center">
               <div className="bg-black text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                 1
@@ -190,12 +192,19 @@ const Services = () => {
               <div className="bg-black text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                 3
               </div>
+              <h3 className="text-lg font-semibold text-black mb-2">Drying</h3>
+              <p className="text-gray-600">Optimal drying processes for consistent moisture content</p>
+            </div>
+            <div className="text-center">
+              <div className="bg-black text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                4
+              </div>
               <h3 className="text-lg font-semibold text-black mb-2">Testing</h3>
               <p className="text-gray-600">Rigorous quality testing and certification</p>
             </div>
             <div className="text-center">
               <div className="bg-black text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
-                4
+                5
               </div>
               <h3 className="text-lg font-semibold text-black mb-2">Delivery</h3>
               <p className="text-gray-600">Nationwide delivery with our specialized fleet</p>
