@@ -28,7 +28,7 @@ const Home = () => {
     {
       icon: <Award className="h-8 w-8" />,
       title: "Quality Assured",
-      description: "ISO 9001 certified standards",
+      description: "Stringent quality standards",
       stat: "100%"
     },
     {
