@@ -8,7 +8,7 @@ const Home = () => {
       icon: <TestTube className="h-8 w-8" />,
       title: "Product Development & Lab Tests",
       description: "In-house and partner lab testing with certificates",
-      features: ["ISO 9001 Certified", "Quality Certificates", "Partner Labs"]
+      features: ["Quality Certificates", "Partner Labs", "Professional Testing"]
     },
     {
       icon: <Truck className="h-8 w-8" />,
@@ -52,7 +52,7 @@ const Home = () => {
   ];
 
   const stats = [
-    { number: "15+", label: "Years Experience", icon: <Star className="h-6 w-6" /> },
+    { number: "10+", label: "Years Experience", icon: <Star className="h-6 w-6" /> },
     { number: "1000+", label: "Projects Completed", icon: <Building className="h-6 w-6" /> },
     { number: "50+", label: "Product Varieties", icon: <TestTube className="h-6 w-6" /> },
     { number: "24/7", label: "Customer Support", icon: <Users className="h-6 w-6" /> }
@@ -136,7 +136,7 @@ const Home = () => {
                 />
                 <div className="absolute inset-0 bg-black/10 rounded-lg"></div>
                 <div className="absolute bottom-6 left-6 bg-white p-4 rounded-lg shadow-lg">
-                  <div className="text-2xl font-bold text-gray-900">Since 2006</div>
+                  <div className="text-2xl font-bold text-gray-900">Since 2015</div>
                   <div className="text-sm text-gray-600">Trusted Excellence</div>
                 </div>
               </div>
@@ -154,7 +154,7 @@ const Home = () => {
                 We deliver trusted, high-quality materials with decades of experience across South Africa.
               </p>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                Since 2006, our opencast mine near Delmas has been producing premium-grade 
+                Since 2015, our opencast mine near Delmas has been producing premium-grade 
                 silica sand for glass, filtration, mining, and leisure industries.
               </p>
               <Link
