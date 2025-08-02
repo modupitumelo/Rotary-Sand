@@ -64,7 +64,7 @@ const Chatbot = () => {
     },
     about: {
       keywords: ['about', 'company', 'history', 'since', 'experience', 'who are you'],
-      response: "Rotary Sand has been South Africa's trusted sand & stone partner since 2006! 🏢\n\n📅 15+ years of excellence\n🏆 Level 1 B-BBEE Contributor\n🌍 Serving clients nationwide\n⭐ 1000+ projects completed\n🎯 ISO 9001 certified quality\n🌱 Committed to sustainability\n\nWe're more than suppliers - we're your partners in success!"
+      response: "Rotary Sand has been South Africa's trusted sand & stone partner since 2006! 🏢\n\n📅 15+ years of excellence\n🏆 Level 1 B-BBEE Contributor\n🌍 Serving clients nationwide\n⭐ 1000+ projects completed\n🎯 Quality assured standards\n🌱 Committed to sustainability\n\nWe're more than suppliers - we're your partners in success!"
     },
     contact: {
       keywords: ['contact', 'phone', 'email', 'reach', 'talk', 'speak'],

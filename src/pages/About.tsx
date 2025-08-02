@@ -128,7 +128,7 @@ const About = () => {
               <div className="absolute inset-0 bg-black/10 rounded-lg"></div>
               <div className="absolute bottom-6 left-6 bg-white p-4 rounded-lg shadow-lg">
                 <div className="text-xl font-bold text-gray-900">Premium Quality</div>
-                <div className="text-sm text-gray-600">ISO 9001 Certified</div>
+                <div className="text-sm text-gray-600">Quality Assured</div>
               </div>
             </div>
           </div>

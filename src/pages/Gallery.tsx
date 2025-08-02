@@ -229,7 +229,7 @@ const Gallery = () => {
                 100%
               </div>
               <h3 className="text-sm sm:text-lg font-semibold text-black mb-2">Quality Assured</h3>
-              <p className="text-xs sm:text-base text-gray-600">ISO 9001 certified processes</p>
+              <p className="text-xs sm:text-base text-gray-600">Certified quality processes</p>
             </div>
           </div>
         </div>

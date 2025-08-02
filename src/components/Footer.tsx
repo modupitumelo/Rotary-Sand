@@ -51,9 +51,9 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <div className="bg-gray-800 p-2 rounded-md">
-                  <span className="text-white font-bold text-xs">ISO 9001</span>
+                  <span className="text-white font-bold text-xs">Quality</span>
                 </div>
-                <span className="text-gray-400">Certified Quality</span>
+                <span className="text-gray-400">Assured Standards</span>
               </div>
             </div>
           </div>
