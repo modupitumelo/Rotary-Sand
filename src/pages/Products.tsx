@@ -4,17 +4,6 @@ import { Filter, Wrench, Home, Volleyball } from 'lucide-react';
 const Products = () => {
   const productCategories = [
     {
-      icon: <Filter className="h-12 w-12" />,
-      title: "Filter Sands, Grits & Pebbles",
-      description: "High-quality filtration materials for water treatment",
-      products: [
-        "Fine Filters (0.3mm to 0.7mm)",
-        "Filter Pebbles (5–45mm sizes)",
-        "Coarse Filters (0.8mm to 1.3mm)",
-        "Filter Grits (2–7mm)"
-      ]
-    },
-    {
       icon: <Wrench className="h-12 w-12" />,
       title: "Industrial Sands & Grits",
       description: "Specialized materials for industrial applications",
@@ -26,14 +15,14 @@ const Products = () => {
       ]
     },
     {
-      icon: <Home className="h-12 w-12" />,
-      title: "Building Sand, Grit & Stone",
-      description: "Construction materials for all building needs",
+      icon: <Filter className="h-12 w-12" />,
+      title: "Filter Sands, Grits & Pebbles",
+      description: "High-quality filtration materials for water treatment",
       products: [
-        "River Sand (washed & unwashed)",
-        "Builder Sand",
-        "Plaster Sand",
-        "Building Grit & Stone (various sizes)"
+        "Fine Filters (0.3mm to 0.7mm)",
+        "Filter Pebbles (5–45mm sizes)",
+        "Coarse Filters (0.8mm to 1.3mm)",
+        "Filter Grits (2–7mm)"
       ]
     },
     {
@@ -45,6 +34,17 @@ const Products = () => {
         "Bunker Sand",
         "Playpen Sand",
         "Golf Course Sand"
+      ]
+    },
+    {
+      icon: <Home className="h-12 w-12" />,
+      title: "Building Sand, Grit & Stone",
+      description: "Construction materials for all building needs",
+      products: [
+        "River Sand (washed & unwashed)",
+        "Builder Sand",
+        "Plaster Sand",
+        "Building Grit & Stone (various sizes)"
       ]
     }
   ];
@@ -123,9 +123,9 @@ const Products = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-lg shadow-lg text-center">
-              <h3 className="text-xl font-semibold text-black mb-4">ISO 9001 Certified</h3>
+              <h3 className="text-xl font-semibold text-black mb-4">Quality Assured</h3>
               <p className="text-gray-600">
-                All products manufactured under ISO 9001 quality management standards
+                All products manufactured under strict quality management standards
               </p>
             </div>
             <div className="bg-white p-8 rounded-lg shadow-lg text-center">

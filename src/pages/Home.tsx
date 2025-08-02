@@ -28,7 +28,7 @@ const Home = () => {
     {
       icon: <Award className="h-8 w-8" />,
       title: "Quality Assured",
-      description: "ISO 9001 certified standards",
+      description: "Certified quality standards",
       stat: "100%"
     },
     {
@@ -55,7 +55,7 @@ const Home = () => {
     { number: "15+", label: "Years Experience", icon: <Star className="h-6 w-6" /> },
     { number: "1000+", label: "Projects Completed", icon: <Building className="h-6 w-6" /> },
     { number: "50+", label: "Product Varieties", icon: <TestTube className="h-6 w-6" /> },
-    { number: "24/7", label: "Customer Support", icon: <Users className="h-6 w-6" /> }
+    { number: "Level 1", label: "B-BBEE Status", icon: <Users className="h-6 w-6" /> }
   ];
 
   return (

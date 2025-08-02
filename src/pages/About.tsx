@@ -7,7 +7,7 @@ const About = () => {
     {
       icon: <Award className="h-8 w-8" />,
       title: "Quality Assurance",
-      description: "We adhere to ISO 9001 standards to ensure top product quality and service excellence.",
+      description: "We adhere to strict quality standards to ensure top product quality and service excellence.",
       color: "from-blue-500 to-blue-600"
     },
     {
@@ -34,7 +34,7 @@ const About = () => {
     { number: "15+", label: "Years of Excellence", icon: <Award className="h-6 w-6" /> },
     { number: "1000+", label: "Projects Completed", icon: <Target className="h-6 w-6" /> },
     { number: "Level 1", label: "B-BBEE Status", icon: <CheckCircle className="h-6 w-6" /> },
-    { number: "ISO 9001", label: "Certified Quality", icon: <Globe className="h-6 w-6" /> }
+    { number: "100%", label: "Quality Assured", icon: <Globe className="h-6 w-6" /> }
   ];
 
   return (
