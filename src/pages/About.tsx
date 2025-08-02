@@ -31,7 +31,7 @@ const About = () => {
   ];
 
   const achievements = [
-    { number: "15+", label: "Years of Excellence", icon: <Award className="h-6 w-6" /> },
+    { number: "10+", label: "Years of Excellence", icon: <Target className="h-6 w-6" /> },
     { number: "1000+", label: "Projects Completed", icon: <Target className="h-6 w-6" /> },
     { number: "Level 1", label: "B-BBEE Status", icon: <CheckCircle className="h-6 w-6" /> },
     { number: "100%", label: "Quality Assured", icon: <Globe className="h-6 w-6" /> }
@@ -49,8 +49,8 @@ const About = () => {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 text-white rounded-full text-sm font-medium mb-6">
-              <Award className="h-4 w-4 mr-2" />
-              Since 2006
+              <Globe className="h-4 w-4 mr-2" />
+              Since 2015
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
               About Rotary Sand
@@ -95,12 +95,12 @@ const About = () => {
               </h2>
               <div className="space-y-6">
                 <p className="text-lg text-gray-600 leading-relaxed">
-                  Rotary Sands has been supplying premium silica sand and aggregates since 2006. 
+                  Rotary Sands has been supplying premium silica sand and aggregates since 2015. 
                   Our opencast mine near Delmas produces high-grade silica used in glass, filtration, 
                   mining, and leisure industries.
                 </p>
                 <p className="text-lg text-gray-600 leading-relaxed">
-                  With decades of experience in the industry, we have established ourselves as 
+                  With years of experience in the industry, we have established ourselves as 
                   a trusted partner for businesses across South Africa, delivering consistent 
                   quality and reliable service.
                 </p>
@@ -180,14 +180,14 @@ const About = () => {
               </div>
               <div className="order-1 lg:order-2">
                 <div className="inline-flex items-center px-4 py-2 bg-gray-100 text-gray-800 rounded-md text-sm font-medium mb-6">
-                  <Award className="h-4 w-4 mr-2" />
-                  ISO 9001 Certified
+                  <Shield className="h-4 w-4 mr-2" />
+                  Quality Assured
                 </div>
                 <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">Quality Assurance</h3>
                 <div className="space-y-4">
                   <p className="text-lg text-gray-600 leading-relaxed">
                     At Rotary Sand, quality is not just a promise—it's our foundation. We adhere 
-                    to stringent ISO 9001 standards throughout our operations, ensuring that every 
+                    to stringent quality standards throughout our operations, ensuring that every 
                     grain of sand and aggregate meets the highest industry specifications.
                   </p>
                   <p className="text-lg text-gray-600 leading-relaxed">
