@@ -200,7 +200,7 @@ const Services = () => {
                 4
               </div>
               <h3 className="text-lg font-semibold text-black mb-2">Testing</h3>
-              <p className="text-gray-600">Rigorous quality testing and certification</p>
+              <p className="text-gray-600">Rigorous quality testing and documentation</p>
             </div>
             <div className="text-center">
               <div className="bg-black text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
