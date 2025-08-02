@@ -36,7 +36,7 @@ const Chatbot = () => {
   const companyKnowledge = {
     products: {
       keywords: ['product', 'sand', 'aggregate', 'material', 'filter', 'industrial', 'building', 'sports'],
-      response: "We offer four main product categories:\n\n🔹 Filter Sands, Grits & Pebbles (0.3mm to 45mm)\n🔹 Industrial Sands & Grits (various microns, colored options)\n🔹 Building Sand, Grit & Stone (river sand, builder sand, plaster sand)\n🔹 Sports & Leisure Sands (beach volleyball, bunker sand, golf course sand)\n\nAll products are ISO 9001 certified with quality certificates provided."
+      response: "We offer four main product categories:\n\n🔹 Filter Sands, Grits & Pebbles (0.3mm to 45mm)\n🔹 Industrial Sands & Grits (various microns, colored options)\n🔹 Building Sand, Grit & Stone (river sand, builder sand, plaster sand)\n🔹 Sports & Leisure Sands (beach volleyball, bunker sand, golf course sand)\n\nAll products come with quality certificates and comprehensive documentation."
     },
     bbee: {
       keywords: ['bbee', 'b-bbee', 'level', 'transformation', 'empowerment', 'contributor'],
@@ -56,7 +56,7 @@ const Chatbot = () => {
     },
     quality: {
       keywords: ['quality', 'iso', 'standard', 'certificate', 'testing', 'lab'],
-      response: "Quality is our foundation! 🏆\n\n🔬 ISO 9001 certified standards\n🧪 In-house laboratory testing\n🤝 Partner lab collaboration for complex analysis\n📜 Certificates provided with every delivery\n✅ Comprehensive quality control processes\n🔍 Regular testing and monitoring\n\nWe ensure every grain meets the highest industry specifications!"
+      response: "Quality is our foundation! 🏆\n\n🔬 Stringent quality standards\n🧪 In-house laboratory testing\n🤝 Partner lab collaboration for complex analysis\n📜 Certificates provided with every delivery\n✅ Comprehensive quality control processes\n🔍 Regular testing and monitoring\n\nWe ensure every grain meets the highest industry specifications!"
     },
     services: {
       keywords: ['service', 'what do you do', 'capabilities', 'infrastructure'],
@@ -64,7 +64,7 @@ const Chatbot = () => {
     },
     about: {
       keywords: ['about', 'company', 'history', 'since', 'experience', 'who are you'],
-      response: "Rotary Sand has been South Africa's trusted sand & stone partner since 2006! 🏢\n\n📅 15+ years of excellence\n🏆 Level 1 B-BBEE Contributor\n🌍 Serving clients nationwide\n⭐ 1000+ projects completed\n🎯 Quality assured standards\n🌱 Committed to sustainability\n\nWe're more than suppliers - we're your partners in success!"
+      response: "Rotary Sand has been South Africa's trusted sand & stone partner since 2015! 🏢\n\n📅 10+ years of excellence\n🏆 Level 1 B-BBEE Contributor\n🌍 Serving clients nationwide\n⭐ 1000+ projects completed\n🎯 Quality assured standards\n🌱 Committed to sustainability\n\nWe're more than suppliers - we're your partners in success!"
     },
     contact: {
       keywords: ['contact', 'phone', 'email', 'reach', 'talk', 'speak'],
