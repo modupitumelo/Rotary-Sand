@@ -205,10 +205,10 @@ const Gallery = () => {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
             <div className="text-center">
               <div className="bg-black text-white w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-lg sm:text-2xl font-bold">
-                15+
+                10+
               </div>
               <h3 className="text-sm sm:text-lg font-semibold text-black mb-2">Years Experience</h3>
-              <p className="text-xs sm:text-base text-gray-600">Serving South Africa since 2006</p>
+              <p className="text-xs sm:text-base text-gray-600">Serving South Africa since 2015</p>
             </div>
             <div className="text-center">
               <div className="bg-black text-white w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-lg sm:text-2xl font-bold">
