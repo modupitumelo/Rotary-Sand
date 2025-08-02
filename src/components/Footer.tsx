@@ -40,7 +40,7 @@ const Footer = () => {
             </Link>
             <p className="text-gray-300 mb-6 max-w-md leading-relaxed">
               Your trusted partner in premium sand & stone solutions. 
-              Supplying top-quality materials across South Africa since 2006.
+              Supplying top-quality materials across South Africa since 2015.
             </p>
             <div className="space-y-3 text-sm">
               <div className="flex items-center space-x-3">
