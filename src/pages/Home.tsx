@@ -83,7 +83,7 @@ const Home = () => {
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 mb-6 sm:mb-8 max-w-4xl mx-auto leading-relaxed px-4">
               Supplying top-quality sand, aggregates, and construction materials for residential, 
-              commercial, and industrial projects across South Africa since 2006.
+              commercial, and industrial projects across South Africa since 2015.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4">
               <Link
