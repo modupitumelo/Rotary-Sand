@@ -11,6 +11,8 @@ interface Message {
 const Chatbot = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isMinimized, setIsMinimized] = useState(false);
+  const [hasUnreadMessage, setHasUnreadMessage] = useState(false);
+  const [hasShownWelcome, setHasShownWelcome] = useState(false);
   const [messages, setMessages] = useState<Message[]>([
     {
       id: '1',
@@ -83,8 +85,21 @@ const Chatbot = () => {
   useEffect(() => {
     if (isOpen && inputRef.current) {
       inputRef.current.focus();
+      setHasUnreadMessage(false);
     }
   }, [isOpen]);
+
+  // Show welcome message when site loads
+  useEffect(() => {
+    if (!hasShownWelcome) {
+      const timer = setTimeout(() => {
+        setHasUnreadMessage(true);
+        setHasShownWelcome(true);
+      }, 3000); // Show after 3 seconds
+      
+      return () => clearTimeout(timer);
+    }
+  }, [hasShownWelcome]);
 
   const findBestResponse = (userMessage: string): string => {
     const message = userMessage.toLowerCase();
@@ -139,6 +154,9 @@ const Chatbot = () => {
 
       setMessages(prev => [...prev, botResponse]);
       setIsTyping(false);
+      if (!isOpen) {
+        setHasUnreadMessage(true);
+      }
     }, 1000 + Math.random() * 1000);
   };
 
@@ -159,14 +177,19 @@ const Chatbot = () => {
   if (!isOpen) {
     return (
       <button
-        onClick={() => setIsOpen(true)}
+        onClick={() => {
+          setIsOpen(true);
+          setHasUnreadMessage(false);
+        }}
         className="fixed bottom-6 right-6 bg-black text-white p-4 rounded-full shadow-2xl hover:bg-gray-800 transition-all duration-300 z-50 group hover:scale-110"
         aria-label="Open chat"
       >
         <MessageCircle className="h-6 w-6" />
-        <div className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center animate-pulse">
-          1
-        </div>
+        {hasUnreadMessage && (
+          <div className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center animate-pulse">
+            1
+          </div>
+        )}
       </button>
     );
   }
