@@ -125,7 +125,7 @@ const Products = () => {
             <div className="bg-white p-8 rounded-lg shadow-lg text-center">
               <h3 className="text-xl font-semibold text-black mb-4">Quality Assured</h3>
               <p className="text-gray-600">
-                All products manufactured under strict quality management standards
+                All products manufactured under strict quality standards
               </p>
             </div>
             <div className="bg-white p-8 rounded-lg shadow-lg text-center">
