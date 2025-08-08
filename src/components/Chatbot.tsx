@@ -176,21 +176,57 @@ const Chatbot = () => {
 
   if (!isOpen) {
     return (
-      <button
-        onClick={() => {
-          setIsOpen(true);
-          setHasUnreadMessage(false);
-        }}
-        className="fixed bottom-6 right-6 bg-black text-white p-4 rounded-full shadow-2xl hover:bg-gray-800 transition-all duration-300 z-50 group hover:scale-110"
-        aria-label="Open chat"
-      >
-        <MessageCircle className="h-6 w-6" />
+      <div className="fixed bottom-6 right-6 z-50">
+        {/* Welcome Message Bubble */}
         {hasUnreadMessage && (
-          <div className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center animate-pulse">
-            1
+          <div className="absolute bottom-20 right-0 mb-2 animate-fade-in">
+            <div className="bg-white rounded-lg shadow-2xl border border-gray-200 p-4 max-w-xs relative">
+              <button
+                onClick={() => setHasUnreadMessage(false)}
+                className="absolute top-2 right-2 text-gray-400 hover:text-gray-600 transition-colors"
+                aria-label="Close welcome message"
+              >
+                <X className="h-4 w-4" />
+              </button>
+              <div className="flex items-start space-x-3">
+                <div className="bg-black p-2 rounded-full flex-shrink-0">
+                  <Bot className="h-4 w-4 text-white" />
+                </div>
+                <div>
+                  <p className="text-sm font-semibold text-gray-900 mb-1">
+                    Hi there! 👋
+                  </p>
+                  <p className="text-xs text-gray-600 leading-relaxed">
+                    I'm here to help with any questions about Rotary Sand. Click to chat!
+                  </p>
+                </div>
+              </div>
+              {/* Speech bubble arrow */}
+              <div className="absolute bottom-0 right-6 transform translate-y-full">
+                <div className="w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-white"></div>
+                <div className="w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-gray-200 transform -translate-y-px"></div>
+              </div>
+            </div>
           </div>
         )}
-      </button>
+        
+        {/* Chat Button */}
+        <button
+          onClick={() => {
+            setIsOpen(true);
+            setHasUnreadMessage(false);
+          }}
+          className="bg-black text-white p-4 rounded-full shadow-2xl hover:bg-gray-800 transition-all duration-300 group hover:scale-110"
+          aria-label="Open chat"
+        >
+          <MessageCircle className="h-6 w-6" />
+          {hasUnreadMessage && (
+            <div className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center animate-pulse">
+              1
+            </div>
+          )}
+        </button>
+      </div>
     );
   }
 
