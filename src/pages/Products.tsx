@@ -7,6 +7,7 @@ const Products = () => {
       icon: <Wrench className="h-12 w-12" />,
       title: "Industrial Sands & Grits",
       description: "Specialized materials for industrial applications",
+      image: "/image.jpg",
       products: [
         "Industrial Sands (various microns)",
         "Colored Industrial Sands",
@@ -18,6 +19,7 @@ const Products = () => {
       icon: <Filter className="h-12 w-12" />,
       title: "Filter Sands, Grits & Pebbles",
       description: "High-quality filtration materials for water treatment",
+      image: "/image.jpg",
       products: [
         "Fine Filters (0.3mm to 0.7mm)",
         "Filter Pebbles (5–45mm sizes)",
@@ -29,6 +31,7 @@ const Products = () => {
       icon: <Volleyball className="h-12 w-12" />,
       title: "Sports & Leisure Sands",
       description: "Premium sands for recreational applications",
+      image: "/sport.jpg", // Custom image
       products: [
         "Beach Volleyball Sand",
         "Bunker Sand",
@@ -40,6 +43,7 @@ const Products = () => {
       icon: <Home className="h-12 w-12" />,
       title: "Building Sand, Grit & Stone",
       description: "Construction materials for all building needs",
+      image: "/image.jpg",
       products: [
         "River Sand (washed & unwashed)",
         "Builder Sand",
@@ -57,7 +61,7 @@ const Products = () => {
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_40%_20%,rgba(34,197,94,0.3),transparent_50%)]"></div>
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_60%_80%,rgba(34,197,94,0.2),transparent_50%)]"></div>
         </div>
-        
+
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 text-white rounded-full text-sm font-medium mb-6">
@@ -79,13 +83,14 @@ const Products = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-20">
             {productCategories.map((category, index) => (
-              <div key={index} className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${
-                index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''
-              }`}>
+              <div
+                key={index}
+                className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${
+                  index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''
+                }`}
+              >
                 <div className={index % 2 === 1 ? 'lg:col-start-2' : ''}>
-                  <div className="text-black mb-6">
-                    {category.icon}
-                  </div>
+                  <div className="text-black mb-6">{category.icon}</div>
                   <h2 className="text-3xl font-bold text-black mb-4">{category.title}</h2>
                   <p className="text-lg text-gray-700 mb-6">{category.description}</p>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -100,8 +105,8 @@ const Products = () => {
                   </div>
                 </div>
                 <div className={index % 2 === 1 ? 'lg:col-start-1' : ''}>
-                  <img 
-                    src="/image.jpg"
+                  <img
+                    src={category.image}
                     alt={category.title}
                     className="rounded-lg shadow-xl w-full h-96 object-cover"
                   />
