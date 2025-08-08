@@ -91,14 +91,12 @@ const Chatbot = () => {
 
   // Show welcome message when site loads
   useEffect(() => {
-    if (!hasShownWelcome) {
-      const timer = setTimeout(() => {
-        setHasUnreadMessage(true);
-        setHasShownWelcome(true);
-      }, 3000); // Show after 3 seconds
-      
-      return () => clearTimeout(timer);
-    }
+    const timer = setTimeout(() => {
+      setHasUnreadMessage(true);
+      setHasShownWelcome(true);
+    }, 1500); // Show after 1.5 seconds
+    
+    return () => clearTimeout(timer);
   }, [hasShownWelcome]);
 
   const findBestResponse = (userMessage: string): string => {
@@ -179,32 +177,65 @@ const Chatbot = () => {
       <div className="fixed bottom-6 right-6 z-50">
         {/* Welcome Message Bubble */}
         {hasUnreadMessage && (
-          <div className="absolute bottom-20 right-0 mb-2 animate-fade-in">
-            <div className="bg-white rounded-lg shadow-2xl border border-gray-200 p-4 max-w-xs relative">
+          <div className="absolute bottom-20 right-0 mb-2 animate-fade-in-up">
+            <div className="bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-2xl border border-gray-100 p-5 max-w-sm relative backdrop-blur-sm">
+              {/* Glow effect */}
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-400/10 to-purple-400/10 rounded-2xl"></div>
+              
               <button
                 onClick={() => setHasUnreadMessage(false)}
-                className="absolute top-2 right-2 text-gray-400 hover:text-gray-600 transition-colors"
+                className="absolute top-3 right-3 text-gray-400 hover:text-gray-600 transition-all duration-200 hover:scale-110 z-10"
                 aria-label="Close welcome message"
               >
                 <X className="h-4 w-4" />
               </button>
-              <div className="flex items-start space-x-3">
-                <div className="bg-black p-2 rounded-full flex-shrink-0">
-                  <Bot className="h-4 w-4 text-white" />
+              
+              <div className="relative z-10">
+                <div className="flex items-start space-x-4">
+                  <div className="bg-gradient-to-br from-black to-gray-800 p-3 rounded-full flex-shrink-0 shadow-lg">
+                    <Bot className="h-5 w-5 text-white" />
+                  </div>
+                  <div className="flex-1">
+                    <div className="flex items-center space-x-2 mb-2">
+                      <p className="text-sm font-bold text-gray-900">
+                        Rotary Sand Assistant
+                      </p>
+                      <div className="flex items-center space-x-1">
+                        <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                        <span className="text-xs text-green-600 font-medium">Online</span>
+                      </div>
+                    </div>
+                    <p className="text-sm text-gray-700 leading-relaxed mb-3">
+                      👋 Hi there! I'm here to help with any questions about our sand and aggregate solutions.
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      <span className="inline-flex items-center px-2 py-1 bg-blue-50 text-blue-700 text-xs font-medium rounded-full border border-blue-200">
+                        💬 Quick Answers
+                      </span>
+                      <span className="inline-flex items-center px-2 py-1 bg-green-50 text-green-700 text-xs font-medium rounded-full border border-green-200">
+                        📞 Get Quotes
+                      </span>
+                    </div>
+                  </div>
                 </div>
-                <div>
-                  <p className="text-sm font-semibold text-gray-900 mb-1">
-                    Hi there! 👋
-                  </p>
-                  <p className="text-xs text-gray-600 leading-relaxed">
-                    I'm here to help with any questions about Rotary Sand. Click to chat!
-                  </p>
+                
+                {/* Call to action */}
+                <div className="mt-4 pt-3 border-t border-gray-200">
+                  <button
+                    onClick={() => {
+                      setIsOpen(true);
+                      setHasUnreadMessage(false);
+                    }}
+                    className="w-full bg-gradient-to-r from-black to-gray-800 text-white text-sm font-semibold py-2 px-4 rounded-xl hover:from-gray-800 hover:to-black transition-all duration-200 transform hover:scale-105 shadow-lg"
+                  >
+                    Start Conversation →
+                  </button>
                 </div>
               </div>
+              
               {/* Speech bubble arrow */}
-              <div className="absolute bottom-0 right-6 transform translate-y-full">
-                <div className="w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-white"></div>
-                <div className="w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-gray-200 transform -translate-y-px"></div>
+              <div className="absolute bottom-0 right-8 transform translate-y-full">
+                <div className="w-0 h-0 border-l-6 border-r-6 border-t-6 border-l-transparent border-r-transparent border-t-white drop-shadow-sm"></div>
               </div>
             </div>
           </div>
@@ -216,12 +247,14 @@ const Chatbot = () => {
             setIsOpen(true);
             setHasUnreadMessage(false);
           }}
-          className="bg-black text-white p-4 rounded-full shadow-2xl hover:bg-gray-800 transition-all duration-300 group hover:scale-110"
+          className="bg-gradient-to-br from-black to-gray-800 text-white p-4 rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 group hover:scale-110 relative overflow-hidden"
           aria-label="Open chat"
         >
+          {/* Pulse animation ring */}
+          <div className="absolute inset-0 rounded-full bg-black animate-ping opacity-20"></div>
           <MessageCircle className="h-6 w-6" />
           {hasUnreadMessage && (
-            <div className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center animate-pulse">
+            <div className="absolute -top-2 -right-2 bg-gradient-to-r from-red-500 to-pink-500 text-white text-xs rounded-full w-6 h-6 flex items-center justify-center animate-bounce shadow-lg border-2 border-white">
               1
             </div>
           )}
