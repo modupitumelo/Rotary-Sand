@@ -97,7 +97,7 @@ const Footer = () => {
                 </div>
                 <div>
                   <a href="mailto:info@rotarysand.co.za" className="text-gray-300 hover:text-white transition-colors duration-200">
-                    info@rotarysand.co.za
+                  orders@rotarysand.co.za
                   </a>
                   <p className="text-xs text-gray-500">24h response</p>
                 </div>
