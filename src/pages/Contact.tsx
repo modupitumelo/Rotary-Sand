@@ -189,16 +189,17 @@ const Contact = () => {
           </div>
           <div className="bg-white p-8 rounded-lg shadow-lg">
             <div className="aspect-video rounded-lg overflow-hidden">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115313.23456789!2d28.7!3d-25.9!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e956c4c4c4c4c4c%3A0x4c4c4c4c4c4c4c4c!2sBronkhorstspruit%2C%20South%20Africa!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Rotary Sand Location - Bronkhorstspruit, South Africa"
-              ></iframe>
+             <iframe
+  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10000!2d28.764437!3d-25.975836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sza!4v1693234567890!5m2!1sen!2sza"
+  width="100%"
+  height="100%"
+  style={{ border: 0 }}
+  allowFullScreen
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+  title="Rotary Sand Location - Near Delmas, South Africa"
+></iframe>
+
             </div>
             <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
               <div className="flex items-center justify-center space-x-3">
