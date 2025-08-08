@@ -3,6 +3,21 @@ import { ArrowRight, Check, TestTube, Truck, Building, Award, Shield, DollarSign
 import { Link } from 'react-router-dom';
 
 const Home = () => {
+  const [currentSlide, setCurrentSlide] = React.useState(0);
+  const slides = [
+    '/image.jpg',
+    '/image2.jpg',
+    '/image3.jpg'
+  ];
+
+  React.useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }, 5000); // Change slide every 5 seconds
+
+    return () => clearInterval(interval);
+  }, [slides.length]);
+
   const services = [
     {
       icon: <TestTube className="h-8 w-8" />,
@@ -63,13 +78,38 @@ const Home = () => {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center bg-black">
         {/* Background Image with Overlay */}
-        <div className="absolute inset-0">
-          <img 
-            src="/image.jpg" 
-            alt="Sand mining operation" 
-            className="w-full h-full object-cover"
-          />
+        <div className="absolute inset-0 overflow-hidden">
+          {slides.map((slide, index) => (
+            <div
+              key={index}
+              className={`absolute inset-0 transition-opacity duration-1000 ${
+                index === currentSlide ? 'opacity-100' : 'opacity-0'
+              }`}
+            >
+              <img 
+                src={slide} 
+                alt={`Sand mining operation ${index + 1}`} 
+                className="w-full h-full object-cover"
+              />
+            </div>
+          ))}
           <div className="absolute inset-0 bg-black/60"></div>
+          
+          {/* Slide Indicators */}
+          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10">
+            {slides.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentSlide(index)}
+                className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                  index === currentSlide 
+                    ? 'bg-white scale-110' 
+                    : 'bg-white/50 hover:bg-white/75'
+                }`}
+                aria-label={`Go to slide ${index + 1}`}
+              />
+            ))}
+          </div>
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20 pb-8">
