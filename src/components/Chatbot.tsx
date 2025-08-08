@@ -241,24 +241,20 @@ const Chatbot = () => {
           </div>
         )}
         
-        {/* Chat Button */}
-        <button
-          onClick={() => {
-            setIsOpen(true);
-            setHasUnreadMessage(false);
-          }}
-          className="bg-gradient-to-br from-black to-gray-800 text-white p-4 rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 group hover:scale-110 relative overflow-hidden"
-          aria-label="Open chat"
-        >
-          {/* Pulse animation ring */}
-          <div className="absolute inset-0 rounded-full bg-black animate-ping opacity-20"></div>
-          <MessageCircle className="h-6 w-6" />
-          {hasUnreadMessage && (
-            <div className="absolute -top-2 -right-2 bg-gradient-to-r from-red-500 to-pink-500 text-white text-xs rounded-full w-6 h-6 flex items-center justify-center animate-bounce shadow-lg border-2 border-white">
-              1
-            </div>
-          )}
-        </button>
+       {/* Chat Button */}
+<button
+  onClick={() => {
+    setIsOpen(true);
+    setHasUnreadMessage(false);
+  }}
+  className="bg-gradient-to-br from-black to-gray-800 text-white p-4 rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 group hover:scale-110 relative overflow-hidden"
+  aria-label="Open chat"
+>
+  {/* Pulse animation ring */}
+  <div className="absolute inset-0 rounded-full bg-black animate-ping opacity-20"></div>
+  <MessageCircle className="h-6 w-6" />
+</button>
+
       </div>
     );
   }
