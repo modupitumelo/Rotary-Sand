@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Home = () => {
   const [currentSlide, setCurrentSlide] = React.useState(0);
   const slides = [
-    '/image.jpg',
+
     '/image2.jpg',
     '/image3.jpg'
   ];
