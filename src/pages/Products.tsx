@@ -31,7 +31,7 @@ const Products = () => {
       icon: <Volleyball className="h-12 w-12" />,
       title: "Sports & Leisure Sands",
       description: "Premium sands for recreational applications",
-      image: "/sport.jpg", // Custom image
+      image: "/sports&leisuresand.jpg", // Custom image
       products: [
         "Beach Volleyball Sand",
         "Bunker Sand",
