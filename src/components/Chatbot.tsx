@@ -176,11 +176,12 @@ const Chatbot = () => {
     return (
       <div className="fixed bottom-6 right-6 z-50">
         {/* Welcome Message Bubble */}
-        {hasUnreadMessage && (
-          <div className="absolute bottom-20 right-0 mb-2 animate-fade-in-up">
-            <div className="bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-2xl border border-gray-100 p-5 max-w-sm relative backdrop-blur-sm">
-              {/* Glow effect */}
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-400/10 to-purple-400/10 rounded-2xl"></div>
+       {hasUnreadMessage && (
+  <div className="absolute -top-2 -right-2 bg-gradient-to-r from-red-500 to-pink-500 text-white text-xs rounded-full w-6 h-6 flex items-center justify-center animate-bounce shadow-lg border-2 border-white">
+    1
+  </div>
+)}
+
               
               <button
                 onClick={() => setHasUnreadMessage(false)}
