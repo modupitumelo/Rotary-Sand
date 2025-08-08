@@ -142,7 +142,7 @@ const Contact = () => {
                   <Mail className="h-6 w-6 text-black mt-1" />
                   <div>
                     <h3 className="text-lg font-semibold text-black mb-1">Email</h3>
-                    <p className="text-gray-700">info@rotarysand.co.za</p>
+                    <p className="text-gray-700">orders@rotarysand.co.za</p>
                     <p className="text-sm text-gray-600">We'll respond within 24 hours</p>
                   </div>
                 </div>
