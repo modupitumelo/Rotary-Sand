@@ -250,10 +250,9 @@ const Chatbot = () => {
   className="bg-gradient-to-br from-black to-gray-800 text-white p-4 rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 group hover:scale-110 relative overflow-hidden"
   aria-label="Open chat"
 >
-  {/* Pulse animation ring */}
-  <div className="absolute inset-0 rounded-full bg-black animate-ping opacity-20"></div>
   <MessageCircle className="h-6 w-6" />
 </button>
+
 
       </div>
     );
