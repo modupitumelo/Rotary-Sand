@@ -69,7 +69,7 @@ const BEE = () => {
             </div>
             <div>
               <img 
-                src="/image.jpg"
+                src="/rotary-sand-b-bbee.jpg"
                 alt="Diverse team collaboration"
                 className="rounded-lg shadow-lg w-full h-96 object-cover"
               />
