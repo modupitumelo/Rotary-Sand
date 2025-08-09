@@ -150,7 +150,14 @@ const Contact = () => {
                   <MapPin className="h-6 w-6 text-black mt-1" />
                   <div>
                     <h3 className="text-lg font-semibold text-black mb-1">Location</h3>
-                    <p className="text-gray-700">Bronkhorstspruit, South Africa</p>
+                    <a 
+                      href="https://www.google.com/maps?q=-25.975836,28.764437" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-gray-700 hover:text-black hover:underline transition-colors duration-200"
+                    >
+                      Bronkhorstspruit, South Africa
+                    </a>
                     <p className="text-sm text-gray-600">Mining operations near Delmas</p>
                   </div>
                 </div>
