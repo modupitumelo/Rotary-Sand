@@ -261,7 +261,7 @@ const Chatbot = () => {
   return (
     <div className={`fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 transition-all duration-300 ${
       isMinimized ? 'w-72 sm:w-80' : 'w-72 sm:w-80 md:w-96'
-    }`}>
+    }`} data-chatbot-container>
       {/* Chat Window */}
       <div className="bg-white rounded-2xl shadow-2xl border border-gray-200 overflow-hidden">
         {/* Header */}
