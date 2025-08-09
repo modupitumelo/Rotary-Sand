@@ -107,7 +107,14 @@ const Footer = () => {
                   <MapPin className="h-4 w-4 text-white" />
                 </div>
                 <div>
-                  <span className="text-gray-300">Bronkhorstspruit</span>
+                  <a 
+                    href="https://www.google.com/maps?q=-25.975836,28.764437" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-gray-300 hover:text-white transition-colors duration-200"
+                  >
+                    Bronkhorstspruit
+                  </a>
                   <p className="text-xs text-gray-500">South Africa</p>
                 </div>
               </div>
