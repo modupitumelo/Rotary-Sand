@@ -1,6 +1,7 @@
 import React from 'react';
 import { Award, Shield, Users, Leaf, ArrowRight, CheckCircle, Target, Globe } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import OptimizedImage from '../components/ImageOptimized';
 
 const About = () => {
   const values = [
@@ -120,10 +121,13 @@ const About = () => {
               </div>
             </div>
             <div className="relative">
-              <img 
-                src="/4.jpg" 
-                alt="Mining facilities" 
-                className="rounded-lg shadow-xl w-full h-96 lg:h-[500px] object-cover"
+              <OptimizedImage
+              <OptimizedImage
+              <OptimizedImage
+                className="rounded-lg shadow-xl w-full h-96 lg:h-[500px]"
+                className="rounded-lg shadow-xl w-full h-80 lg:h-96"
+                className="rounded-lg shadow-xl w-full h-80 lg:h-96"
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
               <div className="absolute inset-0 bg-black/10 rounded-lg"></div>
               <div className="absolute bottom-6 left-6 bg-white p-4 rounded-lg shadow-lg">
@@ -221,10 +225,11 @@ const About = () => {
                 </div>
               </div>
               <div className="relative">
-                <img 
+                <OptimizedImage
                   src="/enviroment.jpg" 
                   alt="Environmental conservation" 
-                  className="rounded-lg shadow-xl w-full h-80 lg:h-96 object-cover"
+                  className="rounded-lg shadow-xl w-full h-80 lg:h-96"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
                 <div className="absolute inset-0 bg-black/10 rounded-lg"></div>
               </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Award, Users, Building, Target } from 'lucide-react';
+import OptimizedImage from '../components/ImageOptimized';
 
 const BEE = () => {
   return (
@@ -68,10 +69,11 @@ const BEE = () => {
               </p>
             </div>
             <div>
-              <img 
+              <OptimizedImage
                 src="/rotary-sand-b-bbee.jpg"
                 alt="Diverse team collaboration"
-                className="rounded-lg shadow-lg w-full h-96 object-cover"
+                className="rounded-lg shadow-lg w-full h-96"
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
           </div>

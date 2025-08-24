@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { X, Users, ChevronLeft, ChevronRight } from 'lucide-react';
+import OptimizedImage from '../components/ImageOptimized';
 
 const Gallery = () => {
   const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
@@ -113,10 +114,11 @@ const Gallery = () => {
                 onClick={() => setSelectedImageIndex(index)}
               >
                 <div className="aspect-square relative overflow-hidden">
-                <img 
+                <OptimizedImage
                   src={image.src}
                   alt={image.caption}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                  className="w-full h-full group-hover:scale-110 transition-transform duration-700"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   <div className="absolute inset-0 flex items-end p-4 sm:p-6">
@@ -174,11 +176,13 @@ const Gallery = () => {
             </button>
             
             {/* Image */}
-            <img 
+            <OptimizedImage
               src={galleryImages[selectedImageIndex].src}
               alt={galleryImages[selectedImageIndex].caption}
-              className="max-w-full max-h-full object-contain rounded-lg shadow-2xl"
+              className="max-w-full max-h-full rounded-lg shadow-2xl"
               onClick={(e) => e.stopPropagation()}
+              priority={true}
+              sizes="100vw"
             />
             
             {/* Image Counter */}

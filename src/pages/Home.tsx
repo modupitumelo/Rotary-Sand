@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowRight, Check, TestTube, Truck, Building, Award, Shield, DollarSign, Leaf, Star, Users, Globe } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import OptimizedImage from '../components/ImageOptimized';
 
 const Home = () => {
   const [currentSlide, setCurrentSlide] = React.useState(0);
@@ -86,10 +87,12 @@ const Home = () => {
                 index === currentSlide ? 'opacity-100' : 'opacity-0'
               }`}
             >
-              <img 
+              <OptimizedImage
                 src={slide} 
                 alt={`Sand mining operation ${index + 1}`} 
-                className="w-full h-full object-cover"
+                className="w-full h-full"
+                priority={index === 0}
+                sizes="100vw"
               />
             </div>
           ))}
@@ -169,10 +172,11 @@ const Home = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="order-2 lg:order-1">
               <div className="relative">
-                <img 
+                <OptimizedImage
                   src="/1.jpg" 
                   alt="Sand mining operation" 
-                  className="rounded-lg shadow-xl w-full h-96 lg:h-[500px] object-cover"
+                  className="rounded-lg shadow-xl w-full h-96 lg:h-[500px]"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
                 <div className="absolute inset-0 bg-black/10 rounded-lg"></div>
                 <div className="absolute bottom-6 left-6 bg-white p-4 rounded-lg shadow-lg">

@@ -1,5 +1,6 @@
 import React from 'react';
 import { TestTube, Truck, Building, FlaskConical, Globe, Scale } from 'lucide-react';
+import OptimizedImage from '../components/ImageOptimized';
 
 const Services = () => {
   const services = [
@@ -98,10 +99,11 @@ const Services = () => {
                   </ul>
                 </div>
                 <div className={index % 2 === 1 ? 'lg:col-start-1' : ''}>
-                  <img 
+                  <OptimizedImage
                     src={service.image}
                     alt={service.title}
-                    className="rounded-lg shadow-xl w-full h-96 object-cover"
+                    className="rounded-lg shadow-xl w-full h-96"
+                    sizes="(max-width: 768px) 100vw, 50vw"
                   />
                 </div>
               </div>

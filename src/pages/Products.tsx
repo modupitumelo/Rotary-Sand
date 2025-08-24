@@ -1,5 +1,6 @@
 import React from 'react';
 import { Filter, Wrench, Home, Volleyball } from 'lucide-react';
+import OptimizedImage from '../components/ImageOptimized';
 
 const Products = () => {
   const productCategories = [
@@ -105,10 +106,11 @@ const Products = () => {
                   </div>
                 </div>
                 <div className={index % 2 === 1 ? 'lg:col-start-1' : ''}>
-                  <img
+                  <OptimizedImage
                     src={category.image}
                     alt={category.title}
-                    className="rounded-lg shadow-xl w-full h-96 object-cover"
+                    className="rounded-lg shadow-xl w-full h-96"
+                    sizes="(max-width: 768px) 100vw, 50vw"
                   />
                 </div>
               </div>
