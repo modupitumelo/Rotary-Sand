@@ -198,16 +198,25 @@ const BEE = () => {
         </div>
       </section>
 
-      {/* Call to Action */}
+      {/* Call to Action with Download Button */}
       <section className="py-20 bg-black text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
           <h2 className="text-4xl font-bold mb-6">Partner with a Level 1 Supplier</h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto text-gray-300">
+          <p className="text-xl max-w-2xl mx-auto text-gray-300">
             Enhance your B-BBEE scorecard while accessing premium sand and aggregate solutions
           </p>
-          <button className="bg-white text-black px-8 py-4 text-lg font-semibold rounded-md hover:bg-gray-100 transition-colors duration-200">
-            Get Your Quote Today
-          </button>
+          <div className="space-x-4">
+            <a
+              href="/Rotary-ITE-Certificate.pdf"
+              download
+              className="inline-block bg-white text-black px-8 py-4 text-lg font-semibold rounded-md hover:bg-gray-100 transition-colors duration-200"
+            >
+              Download ITE Certificate
+            </a>
+            <button className="inline-block bg-orange-600 text-white px-8 py-4 text-lg font-semibold rounded-md hover:bg-orange-700 transition-colors duration-200">
+              Get Your Quote Today
+            </button>
+          </div>
         </div>
       </section>
     </div>
