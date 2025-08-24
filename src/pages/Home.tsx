@@ -170,7 +170,7 @@ const Home = () => {
             <div className="order-2 lg:order-1">
               <div className="relative">
                 <img 
-                  src="/image.jpg" 
+                  src="/1.jpg" 
                   alt="Sand mining operation" 
                   className="rounded-lg shadow-xl w-full h-96 lg:h-[500px] object-cover"
                 />
