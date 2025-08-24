@@ -122,11 +122,9 @@ const About = () => {
             </div>
             <div className="relative">
               <OptimizedImage
-              <OptimizedImage
-              <OptimizedImage
+                src="/about.jpg" 
+                alt="Mining operations" 
                 className="rounded-lg shadow-xl w-full h-96 lg:h-[500px]"
-                className="rounded-lg shadow-xl w-full h-80 lg:h-96"
-                className="rounded-lg shadow-xl w-full h-80 lg:h-96"
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
               <div className="absolute inset-0 bg-black/10 rounded-lg"></div>
