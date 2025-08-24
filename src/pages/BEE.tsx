@@ -213,9 +213,7 @@ const BEE = () => {
             >
               Download ITE Certificate
             </a>
-            <button className="inline-block bg-orange-600 text-white px-8 py-4 text-lg font-semibold rounded-md hover:bg-orange-700 transition-colors duration-200">
-              Get Your Quote Today
-            </button>
+            
           </div>
         </div>
       </section>
