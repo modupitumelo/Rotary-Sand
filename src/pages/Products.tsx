@@ -7,7 +7,7 @@ const Products = () => {
       icon: <Wrench className="h-12 w-12" />,
       title: "Industrial Sands & Grits",
       description: "Specialized materials for industrial applications",
-      image: "/7.jpg",
+      image: "/6.jpg",
       products: [
         "Industrial Sands (various microns)",
         "Colored Industrial Sands",
