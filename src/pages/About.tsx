@@ -121,7 +121,7 @@ const About = () => {
             </div>
             <div className="relative">
               <img 
-                src="/image.jpg" 
+                src="/4.jpg" 
                 alt="Mining facilities" 
                 className="rounded-lg shadow-xl w-full h-96 lg:h-[500px] object-cover"
               />
