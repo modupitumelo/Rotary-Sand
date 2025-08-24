@@ -6,41 +6,42 @@ const Gallery = () => {
 
   const galleryImages = [
     {
-      src: "/image.jpg",
-      caption: "Sand stockpiles at our Delmas facility"
+      src: "/1.jpg",
+      caption: "Sand Processing Machine"
     },
     {
-      src: "/image.jpg",
-      caption: "Delivery truck fleet ready for nationwide service"
+      src: "/2.jpg",
+      caption: "Sand Pile Machinery"
     },
     {
-      src: "/image.jpg",
-      caption: "Mining and processing equipment"
+      src: "/3.jpg",
+      caption: "Sand Field"
     },
     {
-      src: "/image.jpg",
-      caption: "Quality testing laboratory"
+      src: "/4.jpg",
+      caption: "Sand processing Plant"
     },
     {
-      src: "/image.jpg",
-      caption: "Drying facilities for optimal product quality"
+      src: "/5.jpg",
+      caption: "Sand Surface Texture"
     },
     {
-      src: "/image.jpg",
-      caption: "Environmental conservation initiatives"
+      src: "/6.jpg",
+      caption: "Aerial Sand Mining Site"
     },
     {
-      src: "/image.jpg",
-      caption: "Our dedicated team at work"
+      src: "/7.jpg",
+      caption: "Sand Dryer Plant"
     },
     {
-      src: "/image.jpg",
-      caption: "Specialized sand for sports applications"
+      src: "/8.jpg",
+      caption: "Impeller - Dust Collector - Cyclone Fan"
     },
     {
-      src: "/image.jpg",
-      caption: "Industrial sand processing"
+      src: "/9.jpg",
+      caption: "Impeller - Dust Collector - Cyclone Fan"
     }
+   
   ];
 
   const nextImage = () => {
