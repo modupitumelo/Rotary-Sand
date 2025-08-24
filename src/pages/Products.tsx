@@ -7,7 +7,7 @@ const Products = () => {
       icon: <Wrench className="h-12 w-12" />,
       title: "Industrial Sands & Grits",
       description: "Specialized materials for industrial applications",
-      image: "/image.jpg",
+      image: "/7.jpg",
       products: [
         "Industrial Sands (various microns)",
         "Colored Industrial Sands",
@@ -19,7 +19,7 @@ const Products = () => {
       icon: <Filter className="h-12 w-12" />,
       title: "Filter Sands, Grits & Pebbles",
       description: "High-quality filtration materials for water treatment",
-      image: "/image.jpg",
+      image: "/4.jpg",
       products: [
         "Fine Filters (0.3mm to 0.7mm)",
         "Filter Pebbles (5–45mm sizes)",
@@ -43,7 +43,7 @@ const Products = () => {
       icon: <Home className="h-12 w-12" />,
       title: "Building Sand, Grit & Stone",
       description: "Construction materials for all building needs",
-      image: "/image.jpg",
+      image: "/2.jpg",
       products: [
         "River Sand (washed & unwashed)",
         "Builder Sand",
