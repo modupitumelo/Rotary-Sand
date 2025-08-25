@@ -51,7 +51,7 @@ const Header = () => {
                 key={link.name}
                 to={link.path}
                 onClick={handleNavClick}
-                className={`px-4 py-2 font-medium text-sm transition-all duration-200 rounded-md ${
+                className={`px-4 py-2 font-medium text-sm transition-all duration-200 rounded-md whitespace-nowrap ${
                   location.pathname === link.path
                     ? 'text-white bg-black'
                     : 'text-gray-700 hover:text-black hover:bg-gray-100'
@@ -67,7 +67,7 @@ const Header = () => {
             <Link
               to="/contact"
               onClick={handleNavClick}
-              className="px-6 py-2 bg-black text-white font-semibold text-sm rounded-md hover:bg-gray-800 transition-colors duration-200"
+              className="px-6 py-2 bg-black text-white font-semibold text-sm rounded-md hover:bg-gray-800 transition-colors duration-200 whitespace-nowrap"
             >
               Get Quote
             </Link>
