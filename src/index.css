@@ -201,16 +201,6 @@ img {
   height: auto;
 }
 
-/* Lazy loading optimization */
-img[loading="lazy"] {
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-img[loading="lazy"].loaded {
-  opacity: 1;
-}
-
 /* Responsive image containers */
 .image-container {
   position: relative;
